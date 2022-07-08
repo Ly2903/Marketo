@@ -1,0 +1,84 @@
+@keyframes showHome {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showDropdown {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes angleDownUp {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(-180deg);
+  }
+}
+
+@keyframes rotate90 {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes showModal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes showText {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInSlider2 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showOverlay {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hideOverlay {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

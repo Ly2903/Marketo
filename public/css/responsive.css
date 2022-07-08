@@ -1,0 +1,78 @@
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 4%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1521px) {
+  .container {
+    box-sizing: content-box;
+  }
+}
+
+@media (min-width: calc(1400px + 120px)) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body header .header-top .header-top-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body header .header-top .header-top-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body header nav .nav-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body header nav .nav-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body header .section-search .section-search-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body header .section-search .section-search-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body main .advertisement .container .advertisement-content #slider1 .slider1-item .item1-text h2 {
+    font-size: 1.7rem;
+  }
+  body main .advertisement .container .advertisement-content #slider1 .slider1-item .item1-text .text-desc {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  body main .advertisement .container .advertisement-content #slider1 .slider1-item .item1-text h2 {
+    font-size: 2.2rem;
+  }
+  body main .advertisement .container .advertisement-content #slider1 .slider1-item .item1-text .text-desc {
+    font-size: 3.6rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" href="./public/images/marketo.ico">
+  <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./public/css/reset.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="../public/css/marketo.css" />
+  <title>Marketo - WordPress Theme</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-item header-top">
+      <div class="container">
+        <div class="header-top-content  d-flex j-between">
+          <div class="introduce d-flex">
+            <ul class="policy d-flex">
+              <li class="policy-item d-flex">
+                <i class="fa-solid fa-truck"></i>
+                <span>free delivery</span>
+              </li>
+              <li class="policy-item d-flex">
+                <i class="fa-solid fa-earth-europe"></i>
+                <span>returns policy</span>
+              </li>
+            </ul>
+            <div class="contact-SNS d-flex">
+              <span>follow us</span>
+              <ul class="SNS d-flex">
+                <li class="SNS-item">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+                <li class="SNS-item">
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li class="SNS-item">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </li>
+                <li class="SNS-item">
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="login">
+            <a href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- nav -->
+    <nav class="header-item nav">
+      <div class="nav-fixed">
+        <div class="container">
+          <div class="nav-content  d-flex j-between">
+            <div class="nav-item logo d-flex a-center">
+              <img src="./public/images/logo_marketo.png" alt="" />
+            </div>
+            <div class="nav-item nav-menu d-flex flex-center">
+              <div class="nav-bar">
+                <a class="nav-bar-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+
+              </div>
+              <div class="overlay-menu"></div>
+              <div class="main-menu-bar">
+                <div class="menubar-header d-flex j-between">
+                  <a href="#" class="logo">
+                    <img src="./public/images/logo_marketo.png" alt="Logo web marketo">
+                  </a>
+                  <a class="close-menu-bar">
+                    <span>X</span>
+                  </a>
+                </div>
+
+                <ul class="nav-list">
+                  <li class="nav-list-item home">
+                    <a href="#" class="d-flex a-center activeLi">home <i data-content="home"
+                        class="icon-show-dropdown fa-solid fa-angle-down"></i>
+                    </a>
+                    <div class="box-shadow-dropdown dropdown-home">
+                      <div class="row"></div>
+                    </div>
+                  </li>
+                  <li class="nav-list-item pages">
+                    <a href="#" class="d-flex a-center">pages <i data-content="page"
+                        class="icon-show-dropdown fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="box-shadow-dropdown dropdown-pages">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Terms and Conditions</a></li>
+                      <li class="pages-products">
+                        <a href="#">
+                          <span>Products</span>
+                          <i data-content="pages-products" class="icon-show-dropdown fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="box-shadow-dropdown dropdown-products">
+                          <li><a href="#">Product Category</a></li>
+                          <li><a href="#">Product Category V2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-list-item shop">
+                    <a data-content="New" href="#" class="d-flex a-center badge">shop
+                      <i data-content="shop" class="icon-show-dropdown fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="box-shadow-dropdown dropdown-shop">
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Product Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-list-item blog">
+                    <a href="#" class="d-flex a-center">blogs <i data-content="blog"
+                        class="icon-show-dropdown fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="box-shadow-dropdown dropdown-blog">
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Blog single</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-list-item gallery">
+                    <a data-content="Hot" href="#" class="d-flex a-center badge">gallery <i data-content="gallery"
+                        class="icon-show-dropdown fa-solid fa-angle-down"></i>
+                    </a>
+                    <div class="box-shadow-dropdown dropdown-gallery d-flex j-between">
+                      <div class="dropdown-gallery__item">
+                        <h3>Theme Elements</h3>
+                        <span>Pages that very website needs.</span>
+                        <ul class="theme-elements">
+                          <li class="theme-elements__item"><a href="#">Accessories</a></li>
+                          <li class="theme-elements__item"><a href="#">Camera</a></li>
+                          <li class="theme-elements__item"><a href="#">Headphone</a></li>
+                          <li class="theme-elements__item"><a href="#">Gamepad</a></li>
+                          <li class="theme-elements__item"><a href="#">Laptop</a></li>
+                          <li class="theme-elements__item"><a href="#">Mobile</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-gallery__item">
+                        <h3>Theme Elements</h3>
+                        <span>Pages that very website needs.</span>
+                        <ul class="theme-elements">
+                          <li class="theme-elements__item"><a href="#">Shop</a></li>
+                          <li class="theme-elements__item"><a href="#">Product Details</a></li>
+                          <li class="theme-elements__item"><a href="#">Wishlist</a></li>
+                          <li class="theme-elements__item"><a href="#">Product Category</a></li>
+                          <li class="theme-elements__item"><a href="#">Blog</a></li>
+                          <li class="theme-elements__item"><a href="#">Blog Single</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-gallery__item">
+                        <h3>Theme Elements</h3>
+                        <span>Pages that very website needs.</span>
+                        <ul class="theme-elements">
+                          <li class="theme-elements__item"><a href="#">Product Category V2</a></li>
+                          <li class="theme-elements__item"><a href="#">Contact</a></li>
+                          <li class="theme-elements__item"><a href="#">Terms and Conditions</a></li>
+                          <li class="theme-elements__item"><a href="#">FAQ</a></li>
+                          <li class="theme-elements__item"><a href="#">About Us</a></li>
+                          <li class="theme-elements__item"><a href="#">woocommerce-placeholder</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-gallery__item">
+                        <h3>Theme Elements</h3>
+                        <span>Pages that very website needs.</span>
+                        <p>The Apple Watch, with its inbuilt speaker<br>
+                          and microphone, gives you the freedom<br>
+                          to call your friends directly from your<br>
+                          wrist. This splash-resistant.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="d-flex a-center">doakn</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <ul class="nav-item detail-products-putchared d-flex a-center">
+              <li class="favorite-products">
+                <a href="#"><i class="fa-regular fa-heart"></i>
+                  <div class="quantity-favorite">0</div>
+                </a>
+              </li>
+              <li class="cart">
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i>
+                  <div class="quantity-products">0</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="header-item section-search">
+      <div class="container">
+        <div class="section-search-content d-flex j-between">
+          <div class="section-search__item categories-menu">
+            <a href="#" class="d-flex j-between a-center categories-menu-link">
+              <div>
+                <i class="fa-solid fa-bars"></i>
+                <span>All categories</span>
+              </div>
+              <i class="fa-solid fa-angle-down angle-down-active"></i>
+            </a>
+            <ul class="categories-menu-list">
+              <li class="categories-menu__item electronics">
+                <a href="#" class="categories-menu__item-link d-flex j-between">
+                  <span>Electronics</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </a>
+                <ul class="modal modal-electronics row">
+                  <li class="col-lg-4">
+                    <div class="modal-electronic-content">
+                      <h3>Accessories</h3>
+                      <ul class="electronic-item">
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Google Glass</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Headphone</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Laptop</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-electronic-content">
+                      <h3>Tops</h3>
+                      <ul class="electronic-item">
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Google Glass</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Headphone</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Laptop</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-lg-4">
+                    <div class="modal-electronic-content">
+                      <h3>Bottoms</h3>
+                      <ul class="electronic-item">
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Projector</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Speaker</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Light</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-electronic-content">
+                      <h3>Hot Categories</h3>
+                      <ul class="electronic-item">
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Projector</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Speaker</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Light</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-lg-4">
+                    <div class="modal-electronic-content">
+                      <h3>Bottoms</h3>
+                      <ul class="electronic-item">
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Projector</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Mobile</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-electronic-content">
+                      <h3>Outwear</h3>
+                      <ul class="electronic-item">
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Projector</a>
+                        </li>
+                        <li class="electronic-item__li">
+                          <a href="#" class="electonic-item-link">Mobile</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories-menu__item men-fashion">
+                <a href="#" class="categories-menu__item-link d-flex j-between">
+                  <span>Men’s Fashion</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </a>
+                <ul class="modal modal-men-fashion row">
+                  <li class="col-lg-3 col-md-4">
+                    <div class="modal-men-fashion-content">
+                      <h3>furniture</h3>
+                      <ul class="men-fashion-item">
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">Dining Chairs</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">Counter & Bar Stools</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">Occasional Chairs</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">Daybeds & Chaises</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-men-fashion-content">
+                      <h3>lightings</h3>
+                      <ul class="men-fashion-item">
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">Benches & ottomans</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">Dining tables</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">coffee & cocktail tables</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">consoles & desks</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-lg-3 col-md-4">
+                    <div class="modal-men-fashion-content">
+                      <h3>accessories</h3>
+                      <ul class="men-fashion-item">
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">cabinets & bookcases</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">screens</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">outdoor furniture</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">floor samples</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-men-fashion-content">
+                      <h3>texture lab</h3>
+                      <ul class="men-fashion-item">
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">side tables</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">beside tables</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">sideboards & drawers</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">lounge chairs</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-lg-3 col-md-4">
+                    <div class="modal-men-fashion-content">
+                      <h3>what's new</h3>
+                      <ul class="men-fashion-item">
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">Benches & ottomans</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">cocktail tables</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">dining tables</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">consoles & desks</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-lg-3 col-md-4">
+                    <div class="modal-men-fashion-content">
+                      <h3>flash sales</h3>
+                      <ul class="men-fashion-item">
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">easy to Customise</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">simple and intuitive</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">highly customisable</a>
+                        </li>
+                        <li class="men-fashion-item__li">
+                          <a href="#" class="men-fashion-item-link">coding skills</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="categories-menu__item women-fashion">
+                <a href="#" class="categories-menu__item-link d-flex j-between">
+                  <span>Women’s Fashion</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </a>
+                <ul class="modal modal-women-fashion row">
+
+                </ul>
+              </li>
+              <li class="categories-menu__item office-sercurity">
+                <a href="#" class="categories-menu__item-link d-flex j-between">
+                  <span>Office & Security</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </a>
+                <ul class="modal modal-office-security row">
+                  <li class="col-lg-3">
+                    <div class="modal-office-sercurity-content">
+                      <h3>furniture</h3>
+                      <ul class="office-sercurity-item">
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">Dining Chairs</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">Counter & Bar Stools</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">Occasional Chairs</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">Daybeds & Chaises</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-office-sercurity-content">
+                      <h3>lightings</h3>
+                      <ul class="office-sercurity-item">
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">Benches & ottomans</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">Dining tables</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">coffee & cocktail tables</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">consoles & desks</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-lg-3">
+                    <div class="modal-office-sercurity-content">
+                      <h3>accessories</h3>
+                      <ul class="office-sercurity-item">
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">cabinets & bookcases</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">screens</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">outdoor furniture</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">floor samples</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-office-sercurity-content">
+                      <h3>texture lab</h3>
+                      <ul class="office-sercurity-item">
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">side tables</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">beside tables</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">sideboards & drawers</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">lounge chairs</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-lg-3">
+                    <div class="modal-office-sercurity-content">
+                      <h3>what's new</h3>
+                      <ul class="office-sercurity-item">
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">Benches & ottomans</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">cocktail tables</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">dining tables</a>
+                        </li>
+                        <li class="office-sercurity-item__li">
+                          <a href="#" class="office-sercurity-item-link">consoles & desks</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories-menu__item">
+                <a href="#" class="categories-menu__item-link d-flex j-between">Camera</a>
+              </li>
+              <li class="categories-menu__item">
+                <a href="#" class="categories-menu__item-link d-flex j-between">Drone</a>
+              </li>
+              <li class="categories-menu__item">
+                <a href="#" class="categories-menu__item-link d-flex j-between">Gamepad</a>
+              </li>
+              <li class="categories-menu__item">
+                <a href="#" class="categories-menu__item-link d-flex j-between">Mobile</a>
+              </li>
+              <li class="categories-menu__item">
+                <a href="#" class="categories-menu__item-link d-flex j-between">Speaker</a>
+              </li>
+              <li class="categories-menu__item">
+                <a href="#" class="categories-menu__item-link d-flex j-between">All Categories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="section-search__item searchGroup d-flex">
+            <div class="search d-flex j-between flex-center">
+              <input type="text" placeholder="Find your product" />
+              <div class="all-categories d-flex a-center">
+                <a href="#" class="categories-title d-flex a-center j-between">
+                  <span>All categories</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="list-categories">
+                </ul>
+              </div>
+            </div>
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="section-search__item sale">
+            <a href="#" class="">
+              <div class="bg-sale-hover d-flex flex-center f-direction-col">
+                <h3>black friday</h3>
+                <p>Get 45% Off!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="advertisement">
+      <div class="container">
+        <div class="advertisement-content">
+          <div class="owl-carousel owl-theme" id="slider1">
+            <div class="slider1-item">
+              <div class="slider1-item1">
+                <div class="item1-text d-flex f-direction-col j-center">
+                  <div class="item1-text-h2 d-flex">
+                    <h2>Get 50% Off</h2>
+                  </div>
+                  <div class="item1-text-desc d-flex">
+                    <span class="text-desc">shop wise with price<br> comparisons</span>
+                  </div>
+                  <div class="item1-btn">
+                    <div class="item1-btn-content d-flex-inline">
+                      <button class="btn-view-collection">view collection</button>
+                      <button class="btn-categories">categories</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider1-item">
+              <div class="slider1-item2">
+                <div class="item1-text d-flex f-direction-col j-center">
+                  <div class="item1-text-h2 d-flex">
+                    <h2>Get 50% Off</h2>
+                  </div>
+                  <div class="item1-text-desc d-flex">
+                    <span class="text-desc">shop wise with price<br> comparisons</span>
+                  </div>
+                  <div class="item1-btn">
+                    <div class="item1-btn-content d-flex-inline">
+                      <button class="btn-view-collection">view collection</button>
+                      <button class="btn-categories">categories</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider1-item">
+              <div class="slider1-item3">
+                <div class="item1-text d-flex f-direction-col j-center">
+                  <div class="item1-text-h2 d-flex">
+                    <h2>Get 50% Off</h2>
+                  </div>
+                  <div class="item1-text-desc d-flex">
+                    <span class="text-desc">shop wise with price<br> comparisons</span>
+                  </div>
+                  <div class="item1-btn">
+                    <div class="item1-btn-content d-flex-inline">
+                      <button class="btn-view-collection">view collection</button>
+                      <button class="btn-categories">categories</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="item2 d-flex f-direction-col a-baseline">
+            <div class="item2_1 activeImg">
+              <a href="#"><img src="./public/images/banner-campaign-51-1-1.png" alt="" />
+              </a>
+            </div>
+            <div class="item2_2 activeImg">
+              <a href="#"><img src="./public/images/banner-campaign-61-1.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <div class="offer-content row flex-center">
+          <div class="offer-item col-xs-12 col-sm-12 col-md-6  col-lg-4">
+            <a href="#" class="offer-item-link">
+              <div class="offer-item-img activeImg">
+                <img src="./public/images/offer_banner_21-1-1-1.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="offer-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="offer-item-link">
+              <div class="offer-item-img activeImg">
+                <img src="./public/images/offer_banner_31-1-1-1.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="offer-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="offer-item-link">
+              <div class="offer-item-img activeImg">
+                <img src="./public/images/offer_banner_41-1-1-1.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="top-categories-this-w">
+      <div class="container">
+        <div class="top-categories-content">
+          <h2>Top Categories This Week</h2>
+          <div class="owl-carousel owl-theme" id="slider2">
+            <div class="slider2-item projector">
+              <div class="row"></div>
+            </div>
+            <div class="slider2-item google-glass">
+              <div class="row"></div>
+            </div>
+            <div class="slider2-item headphone">
+              <div class="row"></div>
+            </div>
+            <div class="slider2-item light">
+              <div class="row"></div>
+            </div>
+            <div class="slider2-item laptop">
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hot-sale">
+      <div class="container">
+        <div class="hot-sale-content row">
+          <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-4 hot-sale-left f-direction-col">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-12">
+                <a href="#" class="hot-sale-item hot-sale-item1">
+                  <div class="hot-sale-item-content">
+                    <p>Basic Gift Idea</p>
+                    <h3>Mini Two Wheel
+                      <span>Self Balancing Scooter</span>
+                    </h3>
+                    <div class="hot-sale-item-btn"><span>Go Shop</span></div>
+
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-12">
+                <a href="#" class="hot-sale-item hot-sale-item2">
+                  <div class="hot-sale-item-content">
+                    <p>Get 50% Off</p>
+                    <h3>New Arrivals
+                      <span>in Accessories at Best Prices.</span>
+                    </h3>
+                    <div class="hot-sale-item-btn"><span>Go Shop</span></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-8 hot-sale-right">
+            <h2>Hot Sale</h2>
+            <div class="owl-carousel owl-theme" id="slider3">
+              <div class="slider3-item sale-16Percent">
+                <div class="row"></div>
+              </div>
+              <div class="slider3-item sale-25Percent">
+                <div class="row"></div>
+              </div>
+              <div class="slider3-item sale-33Percent">
+                <div class="row"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-women-clothing styleSection">
+      <div class="container">
+        <div class="section-content">
+          <div class="row"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-mens-clothing styleSection">
+      <div class="container">
+        <div class="section-content">
+          <div class="row"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-mobile styleSection">
+      <div class="container">
+        <div class="section-content">
+          <div class="row"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-computer styleSection">
+      <div class="container">
+        <div class="section-content">
+          <div class="row"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-watches styleSection">
+      <div class="container">
+        <div class="section-content">
+          <div class="row"></div>
+        </div>
+      </div>
+    </section>
+    <section class="gadget">
+      <div class="container">
+        <div class="content-gadget d-flex f-direction-col j-between">
+          <div class="header-section d-flex j-between flex-wrap">
+            <h2 class="header-title">Gadget Makes Your Life Easy</h2>
+            <button class="view-collection"><span>View Collections</span></button>
+          </div>
+          <div class="body-section row j-between">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featuredProducts">
+      <div class="container">
+        <div class="featuredProducts-content">
+          <div class="row j-between">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 featuredProduct-item-left">
+              <div class="owl-carousel owl-theme" id="slider5">
+                <div class="slider5-item row slider5-item-featuredProducts">
+                  <div class="owl-carousel owl-theme " id="slider5-1"></div>
+                </div>
+                <div class="slider5-item row slider5-item-trending">
+                  <div class="owl-carousel owl-theme " id="slider5-1"></div>
+                </div>
+                <div class="slider5-item row slider5-item-hotsale">
+                  <div class="owl-carousel owl-theme " id="slider5-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 d-flex flex-center ">
+              <div class="img-YourDream activeImg">
+                <a href="#"><img src="./public/images/featuredProducts/card-1.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="attachment">
+      <div class="container">
+        <div class="attachment-content row a-center flex-wrap">
+          <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
+            <img src="./public/images/attachment/sponsors_white_1-1.png" alt=""></a>
+          <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
+            <img src="./public/images/attachment/sponsors_white_1-2.png" alt=""></a>
+          <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
+            <img src="./public/images/attachment/sponsors_white_2-3.png" alt=""></a>
+          <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
+            <img src="./public/images/attachment/sponsors_white_3-4.png" alt=""></a>
+          <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
+            <img src="./public/images/attachment/sponsors_white_5-5.png" alt=""></a>
+
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-item1">
+        <div class="container">
+          <div class="footer-item1-content row flex-wrap">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="question d-flex f-direction-col j-between">
+                <a href="#" class="img-logo">
+                  <img src="./public/images/logo_marketo_2.png" alt="">
+                </a>
+                <h2>Got Question? Call us 24/7</h2>
+                <span class="hot-line">[80] 1017 197</span>
+                <p class="address">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                <a href="#" class="btn-view-map"><i class="fa-solid fa-location-dot"></i><span> View On Map</span></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5">
+              <div class="payment  d-flex f-direction-col j-between">
+                <h2>We Using</h2>
+                <span>Safe Payments</span>
+                <div class="d-flex img-logo-payments">
+                  <img src="./public/images/payments/skril-1-1.png" alt="">
+                  <img src="./public/images/payments/palypal-1-1.png" alt="">
+                  <img src="./public/images/payments/american_express-1-1.png" alt="">
+                </div>
+                <div class="secured">
+                  <span>Secured by: </span>
+                  <div class="d-flex">
+                    <img src="./public/images/payments/norton_av_logo1-1.png" alt="">
+                    <img src="./public/images/payments/mcAfee_logo1-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 stores">
+              <div class="d-flex f-direction-col stores-content">
+                <h3>Our Stores</h3>
+                <ul class="our-stores">
+                  <li><a href="#">New York</a></li>
+                  <li><a href="#">London</a></li>
+                  <li><a href="#">Cockfosters BP</a></li>
+                  <li><a href="#">Los Angeles</a></li>
+                  <li><a href="#">Chicago</a></li>
+                  <li><a href="#">Las Vegas</a></li>
+                  <li><a href="#">Albarto</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 quicks">
+              <div class="d-flex f-direction-col quicks-content">
+                <h3>Quick Links</h3>
+                <ul class="quicks-list">
+                  <li><a href="#">Support Center</a></li>
+                  <li><a href="#">Term & Condition</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Products Return</a></li>
+                  <li><a href="#">FAQS</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="back-top">
+            <a href="#" class="btn-back-top d-flex flex-center"><span>BACK TOP</span><i
+                class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-item2">
+        <div class="container">
+          <div class="footer-item2-content row j-between">
+            <p class="col-xs-12 col-sm-12 col-md-6">© 2021 XpeedStudio All Rights Reserved</p>
+            <ul class="col-xs-12 col-sm-12 col-md-6 social-networks d-flex">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a></li>
+              <li><a href="#"><i class="fa-brands fa-pinterest-p"></i><span>Pinterest</span></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./public/owlcarousel/owl.carousel.min.js"></script>
+<script type="module" src="./public/js/main.js"></script>
+
+
+</html>

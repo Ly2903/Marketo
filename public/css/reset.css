@@ -1,0 +1,29 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+input, button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
