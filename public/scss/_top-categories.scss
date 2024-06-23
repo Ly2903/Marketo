@@ -1,0 +1,31 @@
+.top-categories-this-w {
+  font-family: "Roboto", sans-serif;
+
+  .container {
+    .top-categories-content {
+      margin-top: 80px;
+      margin-bottom: 80px;
+
+      @include xs {
+        padding: 0 4%;
+      }
+      @include sm {
+        padding: 0 4%;
+      }
+      @include xl {
+        padding: 0;
+      }
+      @include styleNavTabs();
+      .tab-content {
+        .categories-tab-pane {
+          .row {
+            @include styleProduct();
+            [class*="col-"] {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

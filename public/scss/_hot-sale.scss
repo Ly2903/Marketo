@@ -1,0 +1,246 @@
+.hot-sale {
+  @include xs {
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  @include sm {
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  @include lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 70px;
+  }
+
+  background-color: #f9f9f9;
+
+  .container {
+    .hot-sale-content {
+      @include xs {
+        padding: 2% 4%;
+      }
+
+      @include sm {
+        padding: 2% 4%;
+      }
+
+      @media (min-width: $breakpoints) {
+        padding: 0;
+      }
+
+      .hot-sale-left {
+        padding-right: 16px;
+        &.row {
+          padding: 0;
+        }
+
+        .hot-sale-item {
+          cursor: pointer;
+          margin-bottom: 8px;
+          margin-top: 4px;
+          border-radius: 5px;
+          width: 100%;
+          height: 100%;
+          flex: 1;
+
+          &.hot-sale-item1 {
+            background: url(../images/hand_watch1-1.png) no-repeat center/cover;
+          }
+
+          &.hot-sale-item2 {
+            background: url(../images/laptop1-1.png) no-repeat center/cover;
+          }
+
+          .hot-sale-item-content {
+            padding: 50px 30px;
+            width: 300px;
+
+            p {
+              color: $color-blue;
+              font-weight: 500;
+              font-size: 1.4rem;
+              margin-bottom: 8px;
+            }
+
+            h3 {
+              font-size: 1.8rem;
+              font-weight: lighter;
+              display: block;
+              line-height: 1.2;
+
+              span {
+                font-weight: 500;
+                display: block;
+                margin-bottom: 20px;
+              }
+            }
+
+            .hot-sale-item-btn {
+              padding: 16px 35px;
+              border-radius: 3px;
+              font-size: 1.2rem;
+              @include hoverBtn(1.5, $color-green);
+            }
+          }
+
+          &:hover {
+            box-shadow: 0 0 20px 1px rgba(#333, 0.1);
+          }
+        }
+      }
+
+      .hot-sale-right {
+        font-family: "Roboto", sans-serif;
+        padding: 0;
+
+        @include styleNavTabs();
+        .content-header {
+          @include xs {
+            margin-bottom: 20px;
+          }
+          @include sm {
+            margin-bottom: 20px;
+          }
+          @include lg {
+            margin-bottom: 30px;
+          }
+        }
+
+        .tab-content {
+          .hot-sale-tab-pane {
+            .row {
+              @include stylePdDesc();
+              [class*="col-"] {
+                @include xs {
+                  padding: 10px;
+                }
+                @include sm {
+                  padding: 10px;
+                }
+                @include lg {
+                  padding: 0;
+                }
+              }
+
+              .hot-sale-item-product {
+                position: relative;
+                background-color: #fff;
+                text-align: center;
+                padding-left: 28px;
+                padding-right: 28px;
+                padding-bottom: 32px;
+                margin-bottom: 0;
+
+                .item-product-img-link {
+                  img {
+                    padding: 10px;
+                  }
+                  .badge-sale {
+                    position: absolute;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: #62ab00;
+                    top: 0;
+                    right: 0;
+                    margin: 20px;
+                    color: #fff;
+
+                    span {
+                      display: block;
+                      font-size: 1.8rem;
+                      font-weight: 500;
+                      margin-bottom: 4px;
+                    }
+
+                    small {
+                      font-size: 1.4rem;
+                    }
+                  }
+                }
+
+                .price {
+                  display: inline-block;
+                  margin-bottom: 28px;
+                }
+
+                .quantity-sale {
+                  margin-bottom: 10px;
+                  p {
+                    color: #4a4a4a;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                  }
+                }
+
+                .progress-bar {
+                  position: relative;
+                  width: 100%;
+                  height: 10px;
+                  border-radius: 10px;
+                  background-color: #f5f5f5;
+
+                  &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 100%;
+                    background-color: $color-primary;
+                    width: var(--my-var);
+                    border-radius: 20px;
+                  }
+                }
+
+                hr {
+                  margin: 28px 28px 20px 28px;
+                  border: none;
+                  border-bottom: 1px solid $color-border;
+                }
+
+                .offer-end {
+                  text-align: center;
+
+                  .slogan {
+                    display: inline-block;
+                    font-size: 1.8rem;
+                    color: $color-primary;
+                    margin-bottom: 24px;
+                  }
+
+                  small {
+                    font-size: 1.4rem;
+                    color: #777777;
+                  }
+
+                  .countdown-timer {
+                    text-align: center;
+
+                    .circle {
+                      margin: 5px;
+                      height: 40px;
+                      width: 40px;
+                      border-radius: 50%;
+                      background-color: $color-primary;
+
+                      span {
+                        font-size: 1.4rem;
+                        line-height: 40px;
+                        text-align: center;
+                        font-family: "Roboto", sans-serif;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

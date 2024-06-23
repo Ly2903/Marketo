@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="./public/css/reset.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <link rel="stylesheet" href="../public/css/marketo.css" />
+  <link rel="stylesheet" href="../public/css/home.css" />
   <title>Marketo - WordPress Theme</title>
 </head>
 
@@ -67,7 +67,7 @@
         <div class="container">
           <div class="nav-content  d-flex j-between">
             <div class="nav-item logo d-flex a-center">
-              <img src="./public/images/logo_marketo.png" alt="" />
+              <img src="./public/images/logo_marketo.png" alt="Ảnh sản phẩm" />
             </div>
             <div class="nav-item nav-menu d-flex flex-center">
               <div class="nav-bar">
@@ -196,14 +196,28 @@
 
             <ul class="nav-item detail-products-putchared d-flex a-center">
               <li class="favorite-products">
-                <a href="#"><i class="fa-regular fa-heart"></i>
-                  <div class="quantity-favorite">0</div>
+                <a href="./wishlist.html"><i class="fa-regular fa-heart"></i>
+                  <div class="quantity-favorite"></div>
                 </a>
               </li>
               <li class="cart">
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i>
-                  <div class="quantity-products">0</div>
+                <a href="#" class="icon-cart"><i class="fa-solid fa-bag-shopping"></i>
+                  <div class="quantity-products-cart">0</div>
                 </a>
+                <div class="overlay-shopping-cart"></div>
+                <div class="shopping-cart">
+                  <div class="shopping-cart-header d-flex j-between a-center">
+                    <h2 class="title">Shopping cart</h2>
+                    <a href="#cart" class="close-shopping-cart">
+                      <i class="fa-solid fa-xmark"></i>
+                    </a>
+                  </div>
+                  <div class="shopping-cart-content">
+                    <div class="shopping-cart-list">
+
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -561,21 +575,27 @@
               </li>
             </ul>
           </div>
-          <div class="section-search__item searchGroup d-flex">
-            <div class="search d-flex j-between flex-center">
-              <input type="text" placeholder="Find your product" />
-              <div class="all-categories d-flex a-center">
-                <a href="#" class="categories-title d-flex a-center j-between">
-                  <span>All categories</span>
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="list-categories">
-                </ul>
+          <div class="section-search__item searchGroup">
+            <form class="searchGroup-form d-flex j-between">
+              <div class="search d-flex j-between flex-center">
+                <input class="search-inp" type="text" placeholder="Find your product" />
+                <div class="icon-mic"><i class="fa-solid fa-microphone"></i></div>
+                <div class="all-categories d-flex a-center">
+                  <div class="categories-title d-flex a-center j-between">
+                    <span class="search-category">All categories</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <ul class="list-categories">
+                  </ul>
+                </div>
               </div>
+              <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div class="result-search">
+              <ul class="row"></ul>
             </div>
-            <button class="btn-search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
           </div>
           <div class="section-search__item sale">
             <a href="#" class="">
@@ -652,11 +672,11 @@
           <!-- </div> -->
           <div class="item2 d-flex f-direction-col a-baseline">
             <div class="item2_1 activeImg">
-              <a href="#"><img src="./public/images/banner-campaign-51-1-1.png" alt="" />
+              <a href="#"><img src="./public/images/banner-campaign-51-1-1.png" alt="Ảnh sản phẩm" />
               </a>
             </div>
             <div class="item2_2 activeImg">
-              <a href="#"><img src="./public/images/banner-campaign-61-1.jpg" alt="" />
+              <a href="#"><img src="./public/images/banner-campaign-61-1.jpg" alt="Ảnh sản phẩm" />
               </a>
             </div>
           </div>
@@ -670,21 +690,21 @@
           <div class="offer-item col-xs-12 col-sm-12 col-md-6  col-lg-4">
             <a href="#" class="offer-item-link">
               <div class="offer-item-img activeImg">
-                <img src="./public/images/offer_banner_21-1-1-1.jpg" alt="" />
+                <img src="./public/images/offer_banner_21-1-1-1.jpg" alt="Ảnh sản phẩm" />
               </div>
             </a>
           </div>
           <div class="offer-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <a href="#" class="offer-item-link">
               <div class="offer-item-img activeImg">
-                <img src="./public/images/offer_banner_31-1-1-1.png" alt="" />
+                <img src="./public/images/offer_banner_31-1-1-1.png" alt="Ảnh sản phẩm" />
               </div>
             </a>
           </div>
           <div class="offer-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <a href="#" class="offer-item-link">
               <div class="offer-item-img activeImg">
-                <img src="./public/images/offer_banner_41-1-1-1.jpg" alt="" />
+                <img src="./public/images/offer_banner_41-1-1-1.jpg" alt="Ảnh sản phẩm" />
               </div>
             </a>
           </div>
@@ -693,22 +713,25 @@
     </section>
     <section class="top-categories-this-w">
       <div class="container">
-        <div class="top-categories-content">
-          <h2>Top Categories This Week</h2>
-          <div class="owl-carousel owl-theme" id="slider2">
-            <div class="slider2-item projector">
+        <div class="top-categories-content" id="tab-categories">
+          <div class="content-header d-flex j-between">
+            <h2 class="content-title">Top Categories This Week</h2>
+            <ul class="nav-tabs-categories d-flex flex-wrap j-center"></ul>
+          </div>
+          <div class="tab-content">
+            <div id="tab-categories-1" class="categories-tab-pane projector">
               <div class="row"></div>
             </div>
-            <div class="slider2-item google-glass">
+            <div id="tab-categories-2" class="categories-tab-pane google-glass">
               <div class="row"></div>
             </div>
-            <div class="slider2-item headphone">
+            <div id="tab-categories-3" class="categories-tab-pane headphone">
               <div class="row"></div>
             </div>
-            <div class="slider2-item light">
+            <div id="tab-categories-4" class="categories-tab-pane light">
               <div class="row"></div>
             </div>
-            <div class="slider2-item laptop">
+            <div id="tab-categories-5" class="categories-tab-pane laptop">
               <div class="row"></div>
             </div>
           </div>
@@ -717,51 +740,57 @@
     </section>
     <section class="hot-sale">
       <div class="container">
-        <div class="hot-sale-content row">
-          <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-4 hot-sale-left f-direction-col">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-12">
-                <a href="#" class="hot-sale-item hot-sale-item1">
-                  <div class="hot-sale-item-content">
-                    <p>Basic Gift Idea</p>
-                    <h3>Mini Two Wheel
-                      <span>Self Balancing Scooter</span>
-                    </h3>
-                    <div class="hot-sale-item-btn"><span>Go Shop</span></div>
+        <div class="hot-sale-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-4 hot-sale-left f-direction-col">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-12">
+                  <div class="hot-sale-item hot-sale-item1">
+                    <div class="hot-sale-item-content">
+                      <p>Basic Gift Idea</p>
+                      <h3>Mini Two Wheel
+                        <span>Self Balancing Scooter</span>
+                      </h3>
+                      <a href="#" class="hot-sale-item-btn"><span>Go Shop</span></a>
 
+                    </div>
                   </div>
-                </a>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-12">
-                <a href="#" class="hot-sale-item hot-sale-item2">
-                  <div class="hot-sale-item-content">
-                    <p>Get 50% Off</p>
-                    <h3>New Arrivals
-                      <span>in Accessories at Best Prices.</span>
-                    </h3>
-                    <div class="hot-sale-item-btn"><span>Go Shop</span></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-12">
+                  <div class="hot-sale-item hot-sale-item2">
+                    <div class="hot-sale-item-content">
+                      <p>Get 50% Off</p>
+                      <h3>New Arrivals
+                        <span>in Accessories at Best Prices.</span>
+                      </h3>
+                      <a href="#" class="hot-sale-item-btn"><span>Go Shop</span></a>
+                    </div>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-8 hot-sale-right">
-            <h2>Hot Sale</h2>
-            <div class="owl-carousel owl-theme" id="slider3">
-              <div class="slider3-item sale-16Percent">
-                <div class="row"></div>
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-8 hot-sale-right" id="tab-hot-sale">
+              <div class="content-header d-flex j-between">
+                <h2 class="content-title">Hot sale</h2>
+                <ul class="nav-tabs-hot-sale d-flex flex-wrap"></ul>
               </div>
-              <div class="slider3-item sale-25Percent">
-                <div class="row"></div>
-              </div>
-              <div class="slider3-item sale-33Percent">
-                <div class="row"></div>
+              <div class="tab-content">
+                <div id="tab-hot-sale-1" class="hot-sale-tab-pane sale-16Percent">
+                  <div class="row"></div>
+                </div>
+                <div id="tab-hot-sale-2" class="hot-sale-tab-pane sale-25Percent">
+                  <div class="row"></div>
+                </div>
+                <div id="tab-hot-sale-3" class="hot-sale-tab-pane sale-33Percent">
+                  <div class="row"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="section-women-clothing styleSection">
       <div class="container">
         <div class="section-content">
@@ -813,22 +842,33 @@
       <div class="container">
         <div class="featuredProducts-content">
           <div class="row j-between">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 featuredProduct-item-left">
-              <div class="owl-carousel owl-theme" id="slider5">
-                <div class="slider5-item row slider5-item-featuredProducts">
-                  <div class="owl-carousel owl-theme " id="slider5-1"></div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 featuredProduct-item-left"
+              id="tab-featuredProducts">
+              <div class="content-header d-flex j-between">
+                <ul class="nav-tabs-featuredProducts d-flex flex-wrap"></ul>
+              </div>
+              <div class="tab-content">
+
+                <div id="tab-featuredProducts-1" class="featuredProducts-tab-pane">
+                  <div class="row">
+                    <div class="owl-carousel owl-theme slider3-featuredProducts" id="slider3"></div>
+                  </div>
                 </div>
-                <div class="slider5-item row slider5-item-trending">
-                  <div class="owl-carousel owl-theme " id="slider5-1"></div>
+                <div id="tab-featuredProducts-2" class="featuredProducts-tab-pane">
+                  <div class="row">
+                    <div class="owl-carousel owl-theme slider3-trending" id="slider3"></div>
+                  </div>
                 </div>
-                <div class="slider5-item row slider5-item-hotsale">
-                  <div class="owl-carousel owl-theme " id="slider5-1"></div>
+                <div id="tab-featuredProducts-3" class="featuredProducts-tab-pane">
+                  <div class="row">
+                    <div class="owl-carousel owl-theme slider3-hot-sale" id="slider3"></div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 d-flex flex-center ">
               <div class="img-YourDream activeImg">
-                <a href="#"><img src="./public/images/featuredProducts/card-1.png" alt="">
+                <a href="#"><img src="./public/images/featuredProducts/card-1.png" alt="Ảnh sản phẩm">
                 </a>
               </div>
             </div>
@@ -836,19 +876,20 @@
         </div>
       </div>
     </section>
+
     <section class="attachment">
       <div class="container">
         <div class="attachment-content row a-center flex-wrap">
           <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
-            <img src="./public/images/attachment/sponsors_white_1-1.png" alt=""></a>
+            <img src="./public/images/attachment/sponsors_white_1-1.png" alt="Ảnh sản phẩm"></a>
           <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
-            <img src="./public/images/attachment/sponsors_white_1-2.png" alt=""></a>
+            <img src="./public/images/attachment/sponsors_white_1-2.png" alt="Ảnh sản phẩm"></a>
           <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
-            <img src="./public/images/attachment/sponsors_white_2-3.png" alt=""></a>
+            <img src="./public/images/attachment/sponsors_white_2-3.png" alt="Ảnh sản phẩm"></a>
           <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
-            <img src="./public/images/attachment/sponsors_white_3-4.png" alt=""></a>
+            <img src="./public/images/attachment/sponsors_white_3-4.png" alt="Ảnh sản phẩm"></a>
           <a href="" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex j-center attachment-item">
-            <img src="./public/images/attachment/sponsors_white_5-5.png" alt=""></a>
+            <img src="./public/images/attachment/sponsors_white_5-5.png" alt="Ảnh sản phẩm"></a>
 
         </div>
       </div>
@@ -860,12 +901,26 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
               <div class="question d-flex f-direction-col j-between">
                 <a href="#" class="img-logo">
-                  <img src="./public/images/logo_marketo_2.png" alt="">
+                  <img src="./public/images/logo_marketo_2.png" alt="Ảnh sản phẩm">
                 </a>
                 <h2>Got Question? Call us 24/7</h2>
                 <span class="hot-line">[80] 1017 197</span>
                 <p class="address">17 Princess Road, London, Greater London NW1 8JR, UK</p>
                 <a href="#" class="btn-view-map"><i class="fa-solid fa-location-dot"></i><span> View On Map</span></a>
+                <div class="overlay-view-on-map  d-flex flex-center">
+                  <div class="overlay-view-on-map-content d-flex f-direction-col">
+                    <div class="view-on-map-header d-flex j-between a-center">
+                      <p>View map</p>
+                      <button class="close-overlay-view-map">X</button>
+                    </div>
+                    <div class="view-on-map-body">
+                      <iframe class="frame-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10558.992616303394!2d-0.1432163829555214!3d51.5203448426896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20UK!5e0!3m2!1sen!2s!4v1658073420641!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5">
@@ -873,15 +928,15 @@
                 <h2>We Using</h2>
                 <span>Safe Payments</span>
                 <div class="d-flex img-logo-payments">
-                  <img src="./public/images/payments/skril-1-1.png" alt="">
-                  <img src="./public/images/payments/palypal-1-1.png" alt="">
-                  <img src="./public/images/payments/american_express-1-1.png" alt="">
+                  <img src="./public/images/payments/skril-1-1.png" alt="Ảnh sản phẩm">
+                  <img src="./public/images/payments/palypal-1-1.png" alt="Ảnh sản phẩm">
+                  <img src="./public/images/payments/american_express-1-1.png" alt="Ảnh sản phẩm">
                 </div>
                 <div class="secured">
                   <span>Secured by: </span>
                   <div class="d-flex">
-                    <img src="./public/images/payments/norton_av_logo1-1.png" alt="">
-                    <img src="./public/images/payments/mcAfee_logo1-1.png" alt="">
+                    <img src="./public/images/payments/norton_av_logo1-1.png" alt="Ảnh sản phẩm">
+                    <img src="./public/images/payments/mcAfee_logo1-1.png" alt="Ảnh sản phẩm">
                   </div>
                 </div>
               </div>
@@ -937,11 +992,14 @@
         </div>
       </div>
     </footer>
+    <div class="add-success">
+      <p>Product Added Successfully</p>
+    </div>
   </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./public/owlcarousel/owl.carousel.min.js"></script>
 <script type="module" src="./public/js/main.js"></script>
-
+<script type="module" src="./public/js/home.js"></script>
 
 </html>

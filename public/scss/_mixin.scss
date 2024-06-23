@@ -1,10 +1,9 @@
 @mixin quantity($bg-color) {
   position: absolute;
-  right: -10%;
-  top: -10%;
+  left: 60%;
+  top: -20%;
   text-align: center;
-  height: 18px;
-  width: 18px;
+  padding: 2px 5px;
   background-color: $bg-color;
   border-radius: 50%;
   font-size: 13px;
@@ -42,7 +41,7 @@
   background-color: #fff;
   padding: 15px 0;
 
-  @include ml {
+  @media (max-width: $breakpoints) {
     position: relative;
     width: 100%;
     display: none;
@@ -73,7 +72,7 @@
     & > a {
       color: #0063d1;
 
-      @include ml {
+      @media (max-width: $breakpoints) {
         i {
           border: 1px solid #0063d1;
         }
@@ -127,19 +126,18 @@
 
   &:hover {
     &::after {
-      transform: translate(-70%, 160%) rotate(45deg) scale(2.5, 1.4);
+      transform: translate(-70%, 160%) rotate(40deg) scale(2.5, 1.5);
     }
   }
 
   &::after {
     content: "";
     position: absolute;
-    display: block;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
-    transform: translate(70%, -230%) rotate(45deg) scale(3, 1.4);
-    transition: all 1s ease;
+    transform: translate(70%, -230%) rotate(40deg) scale(3, 1.5);
+    transition: all 1.6s ease;
   }
 }
 
@@ -181,7 +179,7 @@
 @mixin stylePdDesc {
   [class*="-item-product"] {
     border-right: 1px solid #ededed;
-    margin-top: 30px;
+    margin-bottom: 30px;
     height: 100%;
 
     &:hover {
@@ -193,6 +191,7 @@
     .item-product-img-link {
       img {
         transition: all 0.3s ease;
+        transform: scale(0.95);
       }
     }
 
@@ -219,7 +218,6 @@
     margin-right: 4px;
     color: #949292;
     font-weight: 500;
-    text-decoration: line-through;
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
   }
@@ -232,19 +230,38 @@
     line-height: 1.6;
   }
 }
+@mixin styleHeartLoading($colorHoverHeart, $colorLoading) {
+  position: relative;
+  margin-right: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
 
+  i {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    i.fa-heart {
+      color: $colorHoverHeart;
+    }
+  }
+  .loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    color: $colorLoading;
+    animation: loaded infinite 2s linear;
+  }
+}
 @mixin styleProduct {
   @include stylePdDesc();
 
   [class*="-item-product"] {
     .item-product-img-link {
       margin-left: 10px;
-
-      img {
-        width: 125px;
-        height: 125px;
-        transform: scale(0.95);
-      }
     }
 
     .item-product-desc {
@@ -262,19 +279,7 @@
         }
 
         .rate-heart {
-          margin-right: 4px;
-          transition: all 0.3s ease;
-
-          i {
-            font-size: 1.6rem;
-            transition: all 0.3s ease;
-          }
-
-          &:hover {
-            i {
-              color: #83b735;
-            }
-          }
+          @include styleHeartLoading(#83b735, #949292);
         }
 
         i {
@@ -310,5 +315,161 @@
     font-size: 1rem;
     background-color: $color;
     color: #fff;
+  }
+}
+
+@mixin styleNavTabs {
+  .content-header {
+    border-bottom: 1px solid #e7e7e7;
+
+    @include xs {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 30px 0;
+    }
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 30px 0;
+    }
+    @include lg {
+      flex-direction: row;
+      align-items: stretch;
+      margin: 0 0 30px 16px;
+    }
+    h2 {
+      font-size: 2.2rem;
+      padding-bottom: 12px;
+      font-weight: 500;
+      @include xs {
+        margin-bottom: 16px;
+      }
+      @include sm {
+        margin-bottom: 16px;
+      }
+      @include lg {
+        margin-bottom: 0;
+      }
+    }
+    [class*="nav-tabs-"] {
+      @include xs {
+        justify-content: center;
+      }
+      li.nav-item {
+        &:not(:last-child) {
+          @include xs {
+            margin-right: 20px;
+          }
+          @include sm {
+            margin-right: 20px;
+          }
+          @include lg {
+            margin-right: 40px;
+          }
+        }
+        a.nav-link {
+          display: inline-block;
+          position: relative;
+          color: #969696;
+          font-weight: 500;
+          padding-bottom: 13px;
+          height: 100%;
+          width: max-content;
+          transition: all 0.4s ease;
+          font-size: 1.7rem;
+          @include sm {
+            &::before {
+              content: "";
+              position: absolute;
+              width: 40px;
+              height: 2px;
+              left: 50%;
+              top: 28px;
+              transform: translateX(-50%);
+              transition: all 0.4s ease;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 28px;
+              left: 50%;
+              transform: translateX(-50%);
+              border-style: solid;
+              border-width: 8px 5px;
+              border-color: transparent transparent transparent transparent;
+              transition: all 0.4s ease;
+            }
+          }
+        }
+        &:hover {
+          a {
+            color: $color-primary;
+            &::before {
+              background-color: $color-primary;
+            }
+
+            &::after {
+              border-color: $color-primary transparent transparent transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin removeProduct {
+  a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.1s ease;
+    i {
+      color: red;
+      font-size: 1.6rem;
+      line-height: 20px;
+      transition: all 0.1s ease;
+    }
+    &:hover {
+      background-color: red;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+@mixin styleInputQuantity {
+  border: 1px solid #e7e7e7;
+  color: rgb(119, 119, 119);
+  button {
+    cursor: pointer;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+  }
+
+  input {
+    height: 40px;
+    @include xs {
+      width: 40px;
+    }
+    @include sm {
+      width: 40px;
+    }
+    @include md {
+      width: 60px;
+    }
+    text-align: center;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    padding: 0 8px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 }

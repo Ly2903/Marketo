@@ -1,0 +1,273 @@
+@import "./variable";
+@import "./mixin";
+@import "media";
+@import "grid";
+@import "styleMain";
+main {
+  font-family: "Roboto", sans-serif;
+}
+.wishlist-section {
+  padding-top: 50px;
+  .container {
+    .wishlist-section-content {
+      font-family: "Roboto", sans-serif;
+
+      @include xs {
+        padding: 0 6%;
+        > table.table-wishlist {
+          display: none;
+        }
+        .list-wishlist {
+          display: block;
+        }
+      }
+      @include sm {
+        padding: 0 10%;
+        > table.table-wishlist {
+          display: none;
+        }
+        .list-wishlist {
+          display: block;
+        }
+      }
+      @include md {
+        > table.table-wishlist {
+          display: table;
+        }
+        .list-wishlist {
+          display: none;
+        }
+      }
+      .wishlist-header {
+        h2 {
+          @include xs {
+            font-size: 2.6rem;
+          }
+          @include sm {
+            font-size: 2.6rem;
+          }
+          @include md {
+            font-size: 3.2rem;
+          }
+          margin-bottom: 30px;
+          font-weight: 500;
+          line-height: 32px;
+        }
+
+        h2.title-wishlist {
+          margin-bottom: 16px;
+        }
+        label {
+          display: inline-block;
+          padding: 8px 16px;
+          background-color: #ebe9eb;
+          cursor: pointer;
+          border-radius: 2px;
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .input-group-edit-title {
+          position: relative;
+          border: 2px solid #d7d7d7;
+          padding: 10px;
+          input {
+            padding-right: 16px;
+            font-size: 1.4rem;
+            width: 96%;
+          }
+          .list-check-remove {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            height: 100%;
+            li {
+              margin-left: 4px;
+              a {
+                display: inline-block;
+                padding: 4px;
+                i {
+                  height: 100%;
+                  color: $color-blue;
+                  font-size: 1.8rem;
+                }
+              }
+              &:hover {
+                i {
+                  color: #063c79;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      table {
+        margin-top: 20px;
+        border: 1px solid #e7e7e7;
+        border-collapse: collapse;
+        border-radius: 5px;
+        text-align: center;
+
+        th,
+        td {
+          border: 1px solid #e7e7e7;
+          font-size: 1.6rem;
+          font-weight: 500;
+          padding: 20px;
+        }
+        td {
+          &.product-thumbnail {
+            width: 28%;
+          }
+
+          &.product-price {
+            color: #0564d2;
+          }
+          &.product-name,
+          &.product-add-to-cart {
+            a {
+              color: #007bff;
+              &:hover {
+                color: #0056b3;
+              }
+            }
+          }
+        }
+        &[class*="table-"] {
+          width: 100%;
+          .product-remove {
+            @include removeProduct();
+          }
+          @include stylePrice();
+          .price,
+          .discount {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .list-wishlist {
+        margin-top: 20px;
+        .wishlist-item-product {
+          position: relative;
+          border: 1px solid #e7e7e7;
+          margin-bottom: 20px;
+          @include xs {
+            padding: 0;
+          }
+          @include sm {
+            padding: 10px;
+          }
+          .row {
+            .wishlist-item-product-1 {
+              padding: 0;
+              img {
+                height: auto;
+                max-width: 100%;
+              }
+              .wishlist-item-product-desc {
+                @include xs {
+                  padding: 0 10px;
+                }
+                @include sm {
+                  padding: 0;
+                }
+                .product-remove {
+                  @include removeProduct();
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  padding: 10px;
+                  .icon-remove-product-wishlist {
+                    height: 30px;
+                    width: 30px;
+                    i {
+                      font-size: 2.8rem;
+                      line-height: 30px;
+                    }
+                  }
+                }
+                .product-name {
+                  a {
+                    font-size: 1.8rem;
+                    color: #007bff;
+                    font-weight: 600;
+                    &:hover {
+                      color: #0564d2;
+                    }
+                  }
+                }
+                .product-price {
+                  width: 100%;
+                  text-align: start;
+                  @include stylePrice();
+                  td {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 1.4rem;
+                    width: 50%;
+                  }
+                }
+              }
+            }
+            .wishlist-item-product-2 {
+              text-align: start;
+              &.product-stock-status {
+                font-size: 1.6rem;
+                @include xs {
+                  height: fit-content;
+                  flex: 1;
+                  td {
+                    padding: 2%;
+                    width: fit-content;
+                    line-height: 1.6;
+                    &.product-stock-status-title {
+                      display: none;
+                    }
+                  }
+                }
+                @include sm {
+                  margin-top: 10px;
+                  td {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 1.4rem;
+                    line-height: 1.6;
+                    &.product-stock-status-title {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            img {
+              opacity: 0.7;
+            }
+          }
+        }
+        .product-add-to-cart {
+          margin-top: 10px;
+          width: 100%;
+          @include xs {
+            padding: 10px;
+          }
+          @include sm {
+            padding: 0;
+          }
+          .add-to-cart {
+            @include hoverBtn(2, $color-green);
+            height: 40px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 40px;
+            padding: 0 30px;
+            background-color: #0063d1;
+          }
+        }
+      }
+    }
+  }
+}

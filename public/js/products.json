@@ -1,0 +1,867 @@
+[
+    {
+        "id": 1,
+        "categories": [
+            "Projector"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/36-2.png",
+        "rate": 5,
+        "titlePd": "Xpeed Projector",
+        "price": "$520.00",
+        "discountPrice": "$499.00"
+    },
+    {
+        "id": 2,
+        "categories": [
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Mobile",
+            "Computer"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/24-1.png",
+        "rate": 5,
+        "titlePd": "Apple iPhone 7s",
+        "price": "$690.00",
+        "discountPrice": "$660.00"
+    },
+    {
+        "id": 3,
+        "categories": [
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Mobile",
+            "Featured Products",
+            "Trending Products",
+            "Hot Sale"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/21-1.png",
+        "rate": 3.5,
+        "titlePd": "Apple iPhone 6s",
+        "price": "",
+        "discountPrice": "$299.00"
+    },
+    {
+        "id": 4,
+        "categories": [
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Portable",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/Cannon-2-Mini-Smart-Bluetooth-1.png",
+        "rate": 0,
+        "titlePd": "Wireless Microphone",
+        "price": "",
+        "discountPrice": "$70.00"
+    },
+    {
+        "id": 5,
+        "categories": [
+            "Camera",
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/08-2.png",
+        "rate": 4,
+        "titlePd": "CC Camera",
+        "price": "$240.00",
+        "discountPrice": "$210.00"
+    },
+    {
+        "id": 6,
+        "categories": [
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Featured Products",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/07-300x300-1-1.jpg",
+        "rate": 5,
+        "titlePd": "Moving Camera",
+        "price": "",
+        "discountPrice": "$230.00"
+    },
+    {
+        "id": 7,
+        "categories": [
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Laptop",
+            "Computer",
+            "Gadget",
+            "Featured Products"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/01-1.png",
+        "rate": 5,
+        "titlePd": "Core i7 Laptop",
+        "price": "",
+        "discountPrice": "$125.00"
+    },
+    {
+        "id": 8,
+        "categories": [
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Mobile",
+            "Computer"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/iphone7-1.png",
+        "rate": 0,
+        "titlePd": "Unlocked Mobile Phone",
+        "price": "",
+        "discountPrice": "$125.00"
+    },
+    {
+        "id": 9,
+        "categories": [
+            "Projector",
+            "Google Glass",
+            "Light",
+            "Headphone",
+            "Computer",
+            "Featured Products"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/Bluetooth-Headphones-Wireless-Stereo-Headset-1.jpg",
+        "rate": 5,
+        "titlePd": "Stereo Headset",
+        "price": "",
+        "discountPrice": "$16.00"
+    },
+    {
+        "id": 10,
+        "categories": [
+            "Drone",
+            "Google Glass",
+            "Headphone",
+            "Light",
+            "Projector",
+            "Speaker",
+            "25% Off",
+            "Featured Products"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/camera-drone-1.png",
+        "rate": 5,
+        "titlePd": "Camera Drone",
+        "soldPd": 8,
+        "available": 6,
+        "price": "$720.00",
+        "discountPrice": "$540.00",
+        "percentDiscount": 0.25,
+        "timeSale": "2019-2-26 0:0:00"
+    },
+    {
+        "id": 11,
+        "categories": [
+            "Drone",
+            "Projector",
+            "Google Glass",
+            "Headphone",
+            "Light",
+            "25% Off"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/WIFI-FPV-With-720P-Camera-High-Hold-Foldable-Drones-1.jpg",
+        "rate": 0,
+        "titlePd": "Holy Stone Drone",
+        "soldPd": 0,
+        "available": 28,
+        "price": "$720.00",
+        "discountPrice": "$540.00",
+        "percentDiscount": 0.25,
+        "timeSale": "2018-12-20 0:0:00"
+    },
+    {
+        "id": 12,
+        "categories": [
+            "Projector",
+            "Camera"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/Bluetooth-Smart-Projector-1.jpg",
+        "rate": 2,
+        "titlePd": "LED Projector",
+        "price": "",
+        "discountPrice": "$20.00"
+    },
+    {
+        "id": 13,
+        "categories": [
+            "Google Glass",
+            "Featured Products",
+            "Trending Products",
+            "Hot Sale"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/40-1.png",
+        "rate": 5,
+        "titlePd": "Mini 3D Glass",
+        "price": "",
+        "discountPrice": "$220.00"
+    },
+    {
+        "id": 14,
+        "categories": [
+            "3d Glass",
+            "Google Glass",
+            "Camera"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/3D-VR-Glass-1.jpg",
+        "rate": 1,
+        "titlePd": "3D VR Glass",
+        "price": "",
+        "discountPrice": "$245.00"
+    },
+    {
+        "id": 15,
+        "categories": [
+            "Gamepad",
+            "Headphone"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/47-1.png",
+        "rate": 4,
+        "titlePd": "Bevigac Gamepad",
+        "price": "",
+        "discountPrice": "$220.00"
+    },
+    {
+        "id": 16,
+        "categories": [
+            "Headphone",
+            "Laptop"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/51-1.png",
+        "rate": 4,
+        "titlePd": "Headset for Phones",
+        "price": "",
+        "discountPrice": "$39.00"
+    },
+    {
+        "id": 17,
+        "categories": [
+            "Headphone",
+            "Laptop",
+            "Computer",
+            "Featured Products"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/49-300x300-1-1.jpg",
+        "rate": 5,
+        "titlePd": "Kotion Headset",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 18,
+        "categories": [
+            "Camera",
+            "Headphone",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/05-2.png",
+        "rate": 4,
+        "titlePd": "Fuers Outdoor",
+        "price": "$520.00",
+        "discountPrice": "$499.00"
+    },
+    {
+        "id": 19,
+        "categories": [
+            "Headphone",
+            "Mobile"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/22-1.png",
+        "rate": 0,
+        "titlePd": "Metal Body Mobile",
+        "price": "$190.00",
+        "discountPrice": "$160.00"
+    },
+    {
+        "id": 20,
+        "categories": [
+            "Headphone",
+            "Featured Products"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/Headphones-Wireless-Stereo-Headsets-earbuds-with-Mic-1.jpg",
+        "rate": 5,
+        "titlePd": "Golden Bluetooth",
+        "price": "$23.00",
+        "discountPrice": "$12.00"
+    },
+    {
+        "id": 21,
+        "categories": [
+            "Headphone",
+            "Light",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/HTB1olbtmlDH8KJj-1.jpg",
+        "rate": 0,
+        "titlePd": "Bluetooth Speaker",
+        "price": "",
+        "discountPrice": "$70.00"
+    },
+    {
+        "id": 22,
+        "categories": [
+            "Headphone"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/DEEP-BASS-Headphones-Earphones-3-5mm-AUX-Foldable-Portable-Adjustable-Gaming-Headset-For-Phones-MP3-MP4-4.jpg",
+        "rate": 5,
+        "titlePd": "Xpeed Headset",
+        "price": "$600.00",
+        "discountPrice": "$560.00"
+    },
+    {
+        "id": 23,
+        "categories": [
+            "Headphone"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/DEEP-BASS-Headphones-Earphones-3-5mm-AUX-Foldable-Portable-Adjustable-Gaming-Headset-For-Phones-MP3-MP4-2-1.jpg",
+        "rate": 4.5,
+        "titlePd": "Gaming Headphones",
+        "price": "$69.00",
+        "discountPrice": "$42.00"
+    },
+    {
+        "id": 24,
+        "categories": [
+            "Light"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/BQ-615-Colorful-LED-Lights-Portable-Bluetooth-Speakers-1.jpg",
+        "rate": 0,
+        "titlePd": "Colorful LED Lights",
+        "price": "",
+        "discountPrice": "$90.00"
+    },
+    {
+        "id": 25,
+        "categories": [
+            "Laptop",
+            "Gadget"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/Licence-Windows10-13-3-VOYO-VBOOK-V3Pro-Celeron-N3450-Tablet-PC-Laptop-with-8G-RAM-128G-1-1.jpg",
+        "rate": 3.33,
+        "titlePd": "Xpeed Laptop V2",
+        "price": "",
+        "discountPrice": "$699.00"
+    },
+    {
+        "id": 26,
+        "categories": [
+            "Laptop",
+            "Gadget"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/laptop_features_1-1.jpg",
+        "rate": 3.33,
+        "titlePd": "Xpeed Laptop",
+        "price": "$699.00",
+        "discountPrice": "$540.00"
+    },
+    {
+        "id": 27,
+        "categories": [
+            "Gamepad",
+            "Laptop"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/46-1.png",
+        "rate": 4,
+        "titlePd": "Mini Game Controller",
+        "price": "",
+        "discountPrice": "$320.00"
+    },
+    {
+        "id": 28,
+        "categories": [
+            "Gamepad",
+            "Laptop"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/48-1.png",
+        "rate": 4,
+        "titlePd": "Fortnite Controller",
+        "price": "",
+        "discountPrice": "$170.00"
+    },
+    {
+        "id": 29,
+        "categories": [
+            "Gamepad",
+            "Laptop",
+            "Featured Products",
+            "Trending Products",
+            "Hot Sale"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/45-1.png",
+        "rate": 5,
+        "titlePd": "Bluetooth Gamepad",
+        "price": "",
+        "discountPrice": "$199.00"
+    },
+    {
+        "id": 30,
+        "categories": [
+            "Laptop",
+            "Watch"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/43-1.png",
+        "rate": 0,
+        "titlePd": "Bracelet Watch",
+        "price": "",
+        "discountPrice": "$40.00"
+    },
+    {
+        "id": 31,
+        "categories": [
+            "Watch"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/42-1.png",
+        "rate": 4,
+        "titlePd": "Goldenhour Watch",
+        "price": "",
+        "discountPrice": "$60.00"
+    },
+    {
+        "id": 32,
+        "categories": [
+            "Laptop"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/13-2.png",
+        "rate": 0,
+        "titlePd": "7th Generation",
+        "price": "$560.00",
+        "discountPrice": "$520.00"
+    },
+    {
+        "id": 33,
+        "categories": [
+            "Laptop",
+            "33% Off"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/Licence-Windows10-13-3-VOYO-VBOOK-V3Pro-Celeron-N3450-Tablet-PC-Laptop-with-8G-RAM-128G-1-1.jpg",
+        "rate": 4,
+        "titlePd": "VOYO VBOOK V3Pro",
+        "soldPd": 2,
+        "available": 18,
+        "price": "$310.00",
+        "discountPrice": "$210.00",
+        "percentDiscount": 0.33,
+        "timeSale": "2018-12-26 0:0:00"
+    },
+    {
+        "id": 34,
+        "categories": [
+            "Laptop",
+            "16% Off",
+            "Computer",
+            "Gadget"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/15-6-Core-i7-3517U-Netbook-with-bluetooth-wifi-HDMI-VGA-Laptop-Computer-4M-Cache-Intel-1.jpg",
+        "rate": 5,
+        "soldPd": 27,
+        "available": 11,
+        "titlePd": "Intel Laptop",
+        "price": "$640.00",
+        "discountPrice": "$540.00",
+        "percentDiscount": 0.16,
+        "timeSale": "2022-12-30 0:0:00"
+    },
+    {
+        "id": 35,
+        "categories": [
+            "Watch",
+            "16% Off"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/Brand-Luxury-Men-Watches-Men-Quartz-1.jpg",
+        "rate": 0,
+        "soldPd": 22,
+        "available": 30,
+        "titlePd": "Luxury Watche",
+        "price": "$640.00",
+        "percentDiscount": 0.16,
+        "discountPrice": "$540.00",
+        "timeSale": "2023-12-30 0:0:00"
+    },
+    {
+        "id": 36,
+        "categories": [
+            "3d Glass",
+            "Mobile",
+            "16% Off",
+            "Computer"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/3D-VR-Glass-Virtual-Reality-1.jpg",
+        "rate": 0,
+        "soldPd": null,
+        "available": null,
+        "titlePd": "3D Glass",
+        "price": "$640.00",
+        "discountPrice": "$540.00",
+        "percentDiscount": 0.16,
+        "timeSale": "2022-12-25 0:0:00"
+    },
+    {
+        "id": 37,
+        "categories": [
+            "Drone",
+            "25% Off"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/Arasdm-APP-RC-Drones-1.jpg",
+        "rate": 0,
+        "soldPd": 0,
+        "available": 22,
+        "titlePd": "Drones Helicopter",
+        "price": "$720.00",
+        "discountPrice": "$540.00",
+        "percentDiscount": 0.25,
+        "timeSale": "2018-07-26 0:0:00"
+    },
+    {
+        "id": 38,
+        "categories": [
+            "Watch",
+            "33% Off"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/Watch-Women-Quartz-Watches-1.jpg",
+        "rate": 0,
+        "soldPd": 2,
+        "available": 14,
+        "titlePd": "Diamond Watches",
+        "price": "$310.00",
+        "discountPrice": "$210.00",
+        "percentDiscount": 0.33,
+        "timeSale": "2018-12-26 0:0:00"
+    },
+    {
+        "id": 39,
+        "categories": [
+            "Uncategorized",
+            "33% Off"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/28-1.png",
+        "rate": 0,
+        "soldPd": 1,
+        "available": 17,
+        "titlePd": "HD LED TV",
+        "price": "$310.00",
+        "discountPrice": "$210.00",
+        "percentDiscount": 0.33,
+        "timeSale": "2018-12-26 0:0:00"
+    },
+    {
+        "id": 40,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/36-1-1.png",
+        "rate": 0,
+        "titlePd": "Summer Casual Cotton",
+        "price": "",
+        "discountPrice": "$19.00"
+    },
+    {
+        "id": 41,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/35-1-1.png",
+        "rate": 0,
+        "titlePd": "Women Tops",
+        "price": "",
+        "discountPrice": "$19.00"
+    },
+    {
+        "id": 42,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/34-1-1.png",
+        "rate": 0,
+        "titlePd": "Women Tops Solid Color",
+        "price": "",
+        "discountPrice": "$19.00"
+    },
+    {
+        "id": 43,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/30-1.png",
+        "rate": 0,
+        "titlePd": "Black Solid Color Full Sleeve",
+        "price": "",
+        "discountPrice": "$19.00"
+    },
+    {
+        "id": 44,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/36-1-1.png",
+        "rate": 0,
+        "titlePd": "Tshirt Cotton",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 45,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/35-1-1.png",
+        "rate": 0,
+        "titlePd": "Women Jacket",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 46,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/34-1-1.png",
+        "rate": 0,
+        "titlePd": "Women Jacket Black Color",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 47,
+        "categories": [
+            "Uncategorized",
+            "Women Clothing",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/31-1.png",
+        "rate": 0,
+        "titlePd": "Men’s Solid Color Short Sleeve",
+        "price": "",
+        "discountPrice": "$19.00"
+    },
+    {
+        "id": 48,
+        "categories": [
+            "Uncategorized",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/26-1.png",
+        "rate": 0,
+        "titlePd": "Pionner Men Casual Short",
+        "price": "",
+        "discountPrice": "$19.00"
+    },
+    {
+        "id": 49,
+        "categories": [
+            "Uncategorized",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/39-1-1.png",
+        "rate": 0,
+        "titlePd": "Pionner Men Casual Short",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 50,
+        "categories": [
+            "Uncategorized",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/38-1-1.png",
+        "titlePd": "Pionner Men Casual Short",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 51,
+        "categories": [
+            "Uncategorized",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/37-1-1.png",
+        "rate": 0,
+        "titlePd": "Pionner Men Casual Full Sleeve",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 52,
+        "categories": [
+            "Uncategorized",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/37-1-1.png",
+        "rate": 0,
+        "titlePd": "JBL Evol Type Grey Shirt",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 53,
+        "categories": [
+            "Uncategorized",
+            "Mens Clothing"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/33-1.png",
+        "rate": 0,
+        "titlePd": "JBL Evol Type DC Wifi Speaker",
+        "price": "",
+        "discountPrice": "$29.00"
+    },
+    {
+        "id": 54,
+        "categories": [
+            "Mobile"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/21-1.png",
+        "rate": 0,
+        "titlePd": "Apple iPhone 8Plus",
+        "price": "",
+        "discountPrice": "$399.00"
+    },
+    {
+        "id": 55,
+        "categories": [
+            "Mobile",
+            "Computer",
+            "Computer"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/Zhndu-Mobile-1-1.png",
+        "rate": 0,
+        "titlePd": "Zhndu Mobile",
+        "price": "$230.00",
+        "discountPrice": "$160.00"
+    },
+    {
+        "id": 56,
+        "categories": [
+            "Uncategorized",
+            "Mobile"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/LED-32-LG-32LJ500U-1-1.jpg",
+        "rate": 0,
+        "titlePd": "Smart TV",
+        "price": "",
+        "discountPrice": "$3000.00"
+    },
+    {
+        "id": 57,
+        "categories": [
+            "Watch"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/New-High-Quality-Luxury-Crystal-Diamond-Watches-1.jpg",
+        "rate": 0,
+        "titlePd": "Women Gold Watch",
+        "price": "$640.00",
+        "discountPrice": "$540.00"
+    },
+    {
+        "id": 58,
+        "categories": [
+            "Watch"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/Mens-Watches-1.jpg",
+        "rate": 0,
+        "titlePd": "Mens Watches",
+        "price": "",
+        "discountPrice": "$240.00"
+    },
+    {
+        "id": 59,
+        "categories": [
+            "Featured Products",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/06-300x300-1-1.jpg",
+        "rate": 0,
+        "titlePd": "Waterproof Camera",
+        "price": "$560.00",
+        "discountPrice": "$520.00"
+    },
+    {
+        "id": 60,
+        "categories": [
+            "Watch"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/New-High-Quality-Luxury-Crystal-Diamond-Watches-1.jpg",
+        "rate": 0,
+        "titlePd": "Gold Watch",
+        "price": "$650.00",
+        "discountPrice": "$530.00"
+    },
+    {
+        "id": 61,
+        "categories": [
+            "Featured Products",
+            "Portable",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/Speaker-Cannon-2-Mini-Smart-Bluetooth-1.png",
+        "titlePd": "Mic for Phone",
+        "price": "",
+        "discountPrice": "$70.00"
+    },
+    {
+        "id": 62,
+        "categories": [
+            "Featured Products",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/04/REMAX-Portable-Wireless-Bluetooth-Speaker-1.jpg",
+        "titlePd": "Wireless Speaker",
+        "price": "",
+        "discountPrice": "$65.00"
+    },
+    {
+        "id": 63,
+        "categories": [
+            "Portable",
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/Wireless-Speaker-Portable-bluetooth-1.jpg",
+        "titlePd": "Portable Speaker",
+        "price": "$15.00",
+        "discountPrice": "$12.00"
+    },
+    {
+        "id": 64,
+        "categories": [
+            "Watch"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/42-1.png",
+        "titlePd": "Apple Watch",
+        "price": "$550.00",
+        "discountPrice": "$500.00"
+    },
+    {
+        "id": 65,
+        "categories": [
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/18-1.png",
+        "titlePd": "Professional Drone",
+        "price": "$680.00",
+        "discountPrice": "$660.00"
+    },
+    {
+        "id": 66,
+        "categories": [
+            "Speaker"
+        ],
+        "image": "https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2013/06/New-2nd-generation-Smart-Air-1.png",
+        "titlePd": "Wireless Speaker",
+        "price": "",
+        "discountPrice": "$60.00"
+    }
+]

@@ -1,0 +1,50 @@
+.attachment {
+  background-color: #333e48;
+
+  .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .attachment-content {
+      @include xs {
+        padding: 0 4%;
+        justify-content: start;
+      }
+
+      @include sm {
+        padding: 0 4%;
+        justify-content: start;
+      }
+
+      @include md {
+        padding: 0 4%;
+        justify-content: start;
+      }
+
+      @include xl {
+        justify-content: space-between;
+      }
+
+      .attachment-item {
+        @include xs {
+          margin-top: 10px;
+        }
+
+        @include sm {
+          margin-top: 10px;
+        }
+
+        @include xl {
+          margin-top: 0;
+        }
+
+        a {
+          img {
+            width: 116px;
+            height: 116px;
+          }
+        }
+      }
+    }
+  }
+}

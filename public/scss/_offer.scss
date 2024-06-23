@@ -1,0 +1,44 @@
+.offer {
+  margin-top: 80px;
+
+  .container {
+    .offer-content {
+      @include xs {
+        padding: 0 calc(4% - 8px);
+      }
+
+      @include sm {
+        padding: 0 calc(4% - 8px);
+      }
+
+      @media (min-width: $breakpoints) {
+        padding: 0;
+      }
+
+      &.row {
+        @include xs {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        @include sm {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        @include xl {
+          margin-left: -8px;
+          margin-right: -8px;
+        }
+        .offer-item {
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+
+          .offer-item-link {
+          }
+        }
+      }
+    }
+  }
+}

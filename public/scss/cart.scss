@@ -1,0 +1,338 @@
+@import "variable";
+@import "./mixin";
+@import "./media";
+@import "./grid";
+@import "./styleMain";
+
+.btn {
+  padding: 16px;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: $color-primary;
+  transition: all 0.4s ease;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-green;
+  }
+}
+
+.disableBtnUpdate {
+  &:hover {
+    color: inherit;
+    background-color: #ebe9eb;
+  }
+}
+main {
+  font-family: "Roboto", sans-serif;
+}
+.cart-section {
+  .container {
+    .cart-section-content {
+      @include xs {
+        padding: 20px 6%;
+      }
+      @include sm {
+        padding: 20px 6%;
+      }
+      @include lg {
+        padding: 70px 10%;
+      }
+      .cart-empty {
+        display: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.4rem;
+        .lable-cart-empty {
+          position: relative;
+          background-color: #f9f9f9;
+          padding: 16px 0;
+          border-top: 3px solid #1e85be;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            height: 16px;
+            width: 16px;
+            border: 1px solid #1e85be;
+            border-top: 5px solid #1e85be;
+          }
+        }
+        .btn-return-shop {
+          display: inline-block;
+          padding: 8px;
+          background-color: #e3e3e3;
+          margin-top: 30px;
+          border-radius: 2px;
+          transition: all 0.4s ease;
+          &:hover {
+            background-color: #d7d7d7;
+          }
+        }
+      }
+      table {
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: center;
+
+        @include xs {
+          border-collapse: separate;
+          border-spacing: 0 20px;
+          border: none;
+          th {
+            display: none;
+          }
+          td {
+            display: block;
+            text-align: end;
+            &.product-name {
+              &::before {
+                content: "Product:";
+                float: left;
+                color: #000;
+              }
+            }
+            &.product-price {
+              &::before {
+                content: "Price:";
+                float: left;
+                color: #000;
+              }
+            }
+            &.product-remove {
+              text-align: start;
+            }
+            &.product-thumbnail {
+              display: none;
+            }
+            &.product-quantity {
+              text-align: end;
+              &::before {
+                content: "Quantity:";
+                float: left;
+                color: #000;
+              }
+            }
+            &.product-subtotal {
+              &::before {
+                content: "Subtotal:";
+                float: left;
+                color: #000;
+              }
+            }
+          }
+          tr {
+            margin-bottom: 20px;
+            &:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+          }
+        }
+        @include sm {
+          border: none;
+          border-collapse: separate;
+          border-spacing: 0 20px;
+          th {
+            display: none;
+          }
+          td {
+            display: block;
+            text-align: end;
+            &.product-name {
+              &::before {
+                content: "Product:";
+                float: left;
+                color: #000;
+              }
+            }
+            &.product-price {
+              &::before {
+                content: "Price:";
+                float: left;
+                color: #000;
+              }
+            }
+            &.product-remove {
+              text-align: start;
+            }
+            &.product-thumbnail {
+              display: none;
+            }
+            &.product-quantity {
+              text-align: end;
+              &::before {
+                content: "Quantity:";
+                float: left;
+                color: #000;
+              }
+            }
+            &.product-subtotal {
+              &::before {
+                content: "Subtotal:";
+                float: left;
+                color: #000;
+              }
+            }
+          }
+          tr {
+            margin-bottom: 20px;
+            &:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+          }
+        }
+        @include md {
+          border-collapse: collapse;
+          border-spacing: 0;
+          border: 1px solid #e7e7e7;
+          th {
+            display: table-cell;
+          }
+          td {
+            display: table-cell;
+            text-align: center;
+            &::before {
+              display: none;
+            }
+            &.product-remove {
+              text-align: center;
+            }
+            &.product-thumbnail {
+              display: table-cell;
+            }
+            &.product-quantity {
+              text-align: center;
+            }
+          }
+          tr {
+            margin-bottom: 0;
+            &:nth-child(even) {
+              background-color: #fff;
+            }
+          }
+        }
+        th,
+        td {
+          border: 1px solid #e7e7e7;
+          font-size: 1.4rem;
+          font-weight: 500;
+          padding: 20px;
+        }
+        td {
+          &.product-thumbnail {
+            width: 20%;
+          }
+
+          &.product-price,
+          &.product-subtotal {
+            color: #0564d2;
+          }
+          &.product-name {
+            a {
+              color: #007bff;
+              &:hover {
+                color: #0056b3;
+              }
+            }
+          }
+        }
+        &[class*="table-"] {
+          width: 100%;
+          .product-remove {
+            @include removeProduct();
+          }
+          @include stylePrice();
+          .discount {
+            font-size: 1.4rem;
+          }
+          .product-quantity {
+            .quantity-content {
+              @include styleInputQuantity();
+            }
+          }
+          .table-cart-footer {
+            .row {
+              [class*="col-"] {
+                padding: 0;
+                @include xs {
+                  margin-top: 10px;
+                }
+                @include sm {
+                  margin-top: 10px;
+                }
+                @include md {
+                  margin-top: 0;
+                }
+              }
+              .inp-coupon-code {
+                height: 100%;
+                width: 100%;
+                padding: 8px 16px;
+                border: 1px solid #d7d7d7;
+                margin-right: 4px;
+              }
+              .btn-update-cart {
+                @include xs {
+                  width: 100%;
+                }
+                @include sm {
+                  width: 100%;
+                }
+                @include md {
+                  width: auto;
+                }
+              }
+              .btn-apply-coupon {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .cart-totals {
+        margin-top: 24px;
+        width: 100%;
+        margin-bottom: 10px;
+        .cart-totals-content {
+          .cart-totals-title {
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: 3.2rem;
+          }
+          .table-cart-totals {
+            width: 100%;
+            .color-blue {
+              color: #0564d2;
+            }
+            tr {
+              border-bottom: 1px solid #e7e7e7;
+              > td {
+                text-align: start;
+                &.subtotal,
+                &.total {
+                  text-align: end;
+                }
+              }
+            }
+            td {
+              border: none;
+              display: table-cell;
+            }
+          }
+          .proceed-to-checkout {
+            padding: 20px 0;
+            .btn-checkout {
+              display: inline-block;
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

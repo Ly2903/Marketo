@@ -1,6 +1,5 @@
 .owl-carousel#slider1 {
   z-index: 0;
-
   .owl-stage-outer {
     .owl-stage {
       .owl-item {
@@ -64,141 +63,7 @@
 }
 
 //custom slider2
-.owl-carousel#slider2,
-.owl-carousel#slider3,
-.owl-carousel#slider5 {
-  position: relative;
-  border-top: 1px solid $color-border;
-
-  .owl-stage-outer {
-    .owl-stage {
-      .owl-item {
-        &.active {
-          [class*="-item"] {
-            .row {
-              animation: fadeInSlider2 0.7s forwards;
-            }
-          }
-        }
-
-        [class*="-item"] {
-          .item1-text {
-            h2 {
-            }
-          }
-        }
-      }
-    }
-  }
-
-  > .owl-dots {
-    display: block;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: -31px;
-    margin-top: 0;
-    @include xs {
-      padding-left: 10px;
-      padding-right: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-    }
-
-    @include sm {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    @include lg {
-      left: auto;
-      right: 0px;
-      transform: translateX(0);
-    }
-
-    button {
-      padding-bottom: 20px !important;
-
-      @include xs {
-        &:not(:first-child) {
-          margin-left: 4% !important;
-        }
-      }
-
-      @include sm {
-        &:not(:first-child) {
-          margin-left: 40px !important;
-        }
-      }
-
-      span {
-        position: relative;
-        background: none;
-        font-weight: 500;
-        width: max-content;
-        transition: all 0.4s ease;
-        color: #969696;
-        margin: 0;
-
-        @include xs {
-          font-size: 1.3rem;
-        }
-
-        @include sm {
-          font-size: 1.5rem;
-        }
-        @include md {
-          font-size: 1.7rem;
-        }
-
-        &::before {
-          content: "";
-          position: absolute;
-          width: 40px;
-          height: 2px;
-          left: 50%;
-          top: 28px;
-          transform: translateX(-50%);
-          transition: all 0.4s ease;
-        }
-
-        &::after {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 28px;
-          left: 50%;
-          transform: translateX(-50%);
-          border-style: solid;
-          border-width: 8px 5px;
-          border-color: transparent transparent transparent transparent;
-          transition: all 0.4s ease;
-        }
-      }
-    }
-  }
-}
-
-.owl-theme#slider2 .owl-dots .owl-dot.active span,
-.owl-theme#slider2 .owl-dots .owl-dot:hover span,
-.owl-theme#slider3 .owl-dots .owl-dot.active span,
-.owl-theme#slider3 .owl-dots .owl-dot:hover span,
-.owl-theme#slider5 .owl-dots .owl-dot.active span,
-.owl-theme#slider5 .owl-dots .owl-dot:hover span {
-  color: $color-primary;
-
-  &::before {
-    background-color: $color-primary;
-  }
-
-  &::after {
-    border-color: $color-primary transparent transparent transparent;
-  }
-}
-
-//custom slider4
-.owl-carousel#slider4 {
+.owl-carousel#slider2 {
   height: 100%;
 
   .owl-stage-outer {
@@ -213,7 +78,7 @@
         &.active {
         }
 
-        .slider4-item {
+        .slider2-item {
           height: 100%;
 
           img {
@@ -242,71 +107,25 @@
   }
 }
 
-.owl-theme#slider4 .owl-dots .owl-dot.active span {
+.owl-theme#slider2 .owl-dots .owl-dot.active span {
   background: $color-primary;
   opacity: 1;
 }
 
-.owl-carousel#slider5 {
-  & > .owl-stage-outer {
+.owl-carousel#slider3 {
+  .owl-stage-outer {
     & > .owl-stage {
       & > .owl-item {
+        width: 100%;
+
+        [class*="-item"] {
+          width: 100%;
+        }
+
         &.active {
-          .slider5-item {
-            animation: fadeInSlider2 0.7s forwards;
-          }
-        }
-
-        #slider5-1 {
-          border-top: 1px solid #e7e7e7;
-          margin-top: 50px;
-          .owl-stage-outer {
-            & > .owl-stage {
-              & > .owl-item {
-                width: 100%;
-
-                [class*="-item"] {
-                  width: 100%;
-                }
-
-                &.active {
-                  [class*="-item"] {
-                    .row {
-                      animation: none;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .owl-nav {
-          margin-top: 0;
-          position: absolute;
-          top: -50px;
-          right: 0;
-
-          @include xs {
-            display: none;
-          }
-
-          @include sm {
-            display: none;
-          }
-
-          @include lg {
-            display: flex;
-          }
-
-          button {
-            padding: 10px 0 !important;
-            opacity: 1;
-            font-size: 2.6rem;
-            color: #d5d5d5;
-
-            i {
-              transition: all 0.4s ease;
+          [class*="-item"] {
+            .row {
+              animation: none;
             }
           }
         }
@@ -314,36 +133,37 @@
     }
   }
 
-  .owl-dots {
-    top: 20px;
-    // width: fit-content;
-    // margin-top: 0;
+  .owl-nav {
+    margin-top: 0;
+    position: absolute;
+    top: -25%;
+    right: 0;
 
-    // @include xs {
-    //   top: 0;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   margin-left: 0;
-    //   margin-right: 0;
-    // }
+    @include xs {
+      display: none;
+    }
 
     @include sm {
+      display: none;
     }
 
     @include lg {
-      left: 0;
-      right: auto;
+      display: flex;
     }
 
     button {
-      span {
-        padding-bottom: 25px;
+      padding: 10px 0 !important;
+      opacity: 1;
+      font-size: 2.6rem;
+      color: #d5d5d5;
+
+      i {
+        transition: all 0.4s ease;
       }
     }
   }
 }
-
-.owl-theme#slider5-1 .owl-nav [class*="owl-"]:hover {
+.owl-theme#slider3 .owl-nav [class*="owl-"]:hover {
   background: none;
 
   i {

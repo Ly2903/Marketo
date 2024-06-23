@@ -33,9 +33,3 @@
     @content;
   }
 }
-
-@mixin ml {
-  @media (max-width: 1025px) {
-    @content;
-  }
-}

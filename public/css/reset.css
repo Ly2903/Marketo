@@ -27,3 +27,7 @@ img{
     max-width: 100%;
     display: block;
 }
+
+select{
+    border: none;
+}

@@ -1,0 +1,108 @@
+.gadget {
+  margin-top: 80px;
+
+  background: url(../images/gadget/gadget-feature-bg.jpg) no-repeat bottom
+    right/cover;
+  font-family: "Roboto", sans-serif;
+
+  .container {
+    .content-gadget {
+      @include xs {
+        padding: 6% 4%;
+      }
+
+      @include sm {
+        padding: 6% 4%;
+      }
+
+      @include lg {
+        padding: 2% 21% 2% 4%;
+      }
+
+      .header-section {
+        margin-bottom: 30px;
+        .header-title {
+          color: #1c1c24;
+          font-size: 2.2rem;
+          font-weight: 500;
+          line-height: 2;
+        }
+
+        button.view-collection {
+          @include hoverBtn(2, $color-green);
+          padding: 16px 35px;
+          background-color: $color-primary;
+          border-radius: 50px;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+
+      .body-section {
+        @include styleProduct();
+
+        &.row {
+          @include xs {
+            margin: 0;
+          }
+
+          @include sm {
+            margin: 0 -16px;
+          }
+        }
+
+        .gadget-item {
+          border: none;
+          margin-bottom: 30px;
+
+          @include xs {
+            padding: 0;
+          }
+
+          @include sm {
+            padding: 0 16px;
+          }
+
+          .gadget-item-product {
+            background-color: #fff;
+            margin-bottom: 0;
+
+            .item-product-img-link {
+              width: 40%;
+              margin-left: 0;
+
+              img {
+                padding: 10px;
+                width: 221px;
+                height: 221px;
+              }
+            }
+
+            .item-product-desc {
+              margin-left: 0;
+              padding: 0 20px;
+              align-self: center;
+
+              .item-product-title {
+                margin-top: 25px;
+              }
+
+              .add-to-cart {
+                @include hoverBtn(2, $color-green);
+                width: 180px;
+                height: 40px;
+                background-color: #0063d1;
+                font-size: 1.4rem;
+                font-weight: 600;
+                border-radius: 50px;
+                margin-top: 16px;
+                text-align: center;
+                line-height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -89,6 +89,72 @@ footer {
               background-color: $color-green;
             }
           }
+          .overlay-view-on-map {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            .overlay-view-on-map-content {
+              @include xs {
+                width: 80%;
+              }
+              @include sm {
+                width: 60%;
+              }
+              @include lg {
+                width: 50%;
+              }
+              @include xl {
+                width: 40%;
+              }
+              position: fixed;
+              z-index: 2000;
+              height: 80%;
+              background-color: #fff;
+              padding: 10px;
+              .view-on-map-header {
+                @include xs {
+                  padding: 10px 10px;
+                }
+                @include sm {
+                  padding: 10px 20px;
+                }
+                font-size: 1.8rem;
+                font-weight: 500;
+                p {
+                  margin: 0;
+                }
+                .close-overlay-view-map {
+                  cursor: pointer;
+                  padding: 4px 8px;
+                  border-radius: 50%;
+                  transition: all 0.4s ease;
+                  color: #777777;
+                  font-weight: 600;
+                  &:hover {
+                    background-color: brown;
+                    color: #fff;
+                  }
+                }
+              }
+              .view-on-map-body {
+                flex: 1;
+                @include xs {
+                  padding: 10px 10px;
+                }
+                @include sm {
+                  padding: 10px 20px;
+                }
+                height: inherit;
+                .frame-map {
+                }
+              }
+            }
+          }
         }
 
         .payment {

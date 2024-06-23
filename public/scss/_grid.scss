@@ -10,14 +10,14 @@ $gutter: 16px;
 
   //padding items
   [class*="col-"] {
-    padding: $gutter / 2;
+    padding: calc($gutter / 2);
   }
 
   //xs
   @for $i from 1 through $cols {
     @include xs {
       .col-xs-#{$i} {
-        width: 100% / $cols * $i;
+        width: calc(100% / $cols * $i);
       }
     }
   }
@@ -26,7 +26,7 @@ $gutter: 16px;
   @for $i from 1 through $cols {
     @include sm {
       .col-sm-#{$i} {
-        width: 100% / $cols * $i;
+        width: calc(100% / $cols * $i);
       }
     }
   }
@@ -35,7 +35,7 @@ $gutter: 16px;
   @for $i from 1 through $cols {
     @include md {
       .col-md-#{$i} {
-        width: 100% / $cols * $i;
+        width: calc(100% / $cols * $i);
       }
     }
   }
@@ -44,7 +44,7 @@ $gutter: 16px;
   @for $i from 1 through $cols {
     @include lg {
       .col-lg-#{$i} {
-        width: 100% / $cols * $i;
+        width: calc(100% / $cols * $i);
       }
     }
   }
@@ -53,16 +53,16 @@ $gutter: 16px;
   @for $i from 1 through $cols {
     @include xl {
       .col-xl-#{$i} {
-        width: 100% / $cols * $i;
+        width: calc(100% / $cols * $i);
       }
     }
   }
 
-  //ml 1025px
+  //breakpoint 1025px
   @for $i from 1 through $cols {
-    @include ml {
-      .col-ml-#{$i} {
-        width: 100% / $cols * $i;
+    @media (max-width: $breakpoints) {
+      .col-breakpoints-#{$i} {
+        width: calc(100% / $cols * $i);
       }
     }
   }

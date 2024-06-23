@@ -177,6 +177,7 @@
                     border: 2px solid $color-blue;
                     position: relative;
                     transform: translateX(-102%);
+                    margin-right: 10px;
 
                     &:hover {
                       background-color: #000;
@@ -190,7 +191,7 @@
                     color: #000;
                     background-color: $color-primary;
                     transform: translateX(103%);
-                    left: -1%;
+                    // left: -1%;
 
                     @include xs {
                       margin-top: 20px;

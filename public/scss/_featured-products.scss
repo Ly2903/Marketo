@@ -18,74 +18,62 @@
       }
 
       .row {
-        .featuredProduct-item-left {
-          #slider5 {
-            border: none;
-            .slider5-item {
-              opacity: 0;
+        .featuredProduct-item-left#tab-featuredProducts {
+          @include styleNavTabs();
+          .featuredProducts-tab-pane {
+            .row {
+              @include styleProduct();
 
-              #slider5-1 {
-                .slider5-1-item {
-                  overflow: hidden;
+              [class*="-item-product"] {
+                border-right: none;
+                padding: 0;
 
-                  &.row {
-                    @include styleProduct();
+                .item-product-title {
+                  font-size: 1.4rem;
+                }
 
-                    [class*="-item-product"] {
-                      border-right: none;
-                      padding: 0;
-
-                      .item-product-title {
-                        font-size: 1.4rem;
-                      }
-
-                      .item-product-img-link {
-                        img {
-                          width: 71px;
-                          height: 71px;
-                          transform: scale(1);
-                        }
-                      }
-
-                      .price {
-                        font-size: 1.4rem;
-                        font-weight: 400;
-                      }
-
-                      .discount {
-                        font-size: 1.4rem;
-                        font-weight: 400;
-                      }
-                    }
+                .item-product-img-link {
+                  img {
+                    transform: scale(1);
                   }
+                }
+
+                .price {
+                  font-size: 1.4rem;
+                  font-weight: 400;
+                }
+
+                .discount {
+                  font-size: 1.4rem;
+                  font-weight: 400;
                 }
               }
             }
           }
         }
+      }
 
-        .img-YourDream {
-          @include xs {
-            margin-top: 30px;
+      .img-YourDream {
+        @include xs {
+          margin-top: 30px;
 
-            img {
-              width: 100%;
-              height: 500px;
-            }
+          img {
+            width: 100%;
+            height: 500px;
           }
+        }
 
-          @include sm {
-            margin-top: 30px;
+        @include sm {
+          margin-top: 30px;
 
-            img {
-              width: 310px;
-              height: 316px;
-            }
+          img {
+            width: 310px;
+            height: 316px;
           }
+        }
 
-          @include xl {
-            margin-top: 0;
-          }
+        @include xl {
+          margin-top: 0;
         }
       }
     }
